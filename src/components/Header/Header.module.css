@@ -12,14 +12,14 @@
     z-index: 1;
 }
 
-.dadtierLogo {
+.hikarooLogo {
     height: 100px;
     width: 125px;
     padding: 0px 20px;
     transition: 0.3s;
 }
 
-.dadtierLogo:hover {
+.hikarooLogo:hover {
     cursor: pointer;
     filter:invert(5%);
     background: linear-gradient(180deg, rgba(255,255,255,0) 50%,  rgba(255, 238, 188,0.46122198879551823) 100%);
@@ -44,7 +44,7 @@ rgb(223, 163, 166) */
     text-align: center;
     align-self: center;
     margin: 0 5px 0 5px;
-    padding: 2.5em 0;
+    padding: 2.4em 0;
     transition: 0.3s;
     font-family: cursive;
 }
@@ -56,33 +56,13 @@ rgb(223, 163, 166) */
     background: linear-gradient(180deg, rgba(255,255,255,0) 50%,  rgba(255, 238, 188,0.46122198879551823) 100%);
 }
 
-.socialIcon {
-    height: 30px;
-    width: 30px;
-    background-color: white;
-    border: 1px solid darkgrey;
-    margin-left: 6px;
-    margin-top: 14px;
-    transition: 0.3s;
-}
 
-.socialIcon:hover {
-    cursor: pointer;
-    background: linear-gradient(180deg, rgba(255,255,255,0) 0%,  rgba(233, 233, 233, 0.192) 100%);
-} 
-
-/* 
-@media only screen and (max-width:1100px) {
-    .socialIcon {
-        display: none;  
-    }
-}
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
     .headerButton {
         display: none;  
     }
 
-    .dadtierLogo {
+    .hikarooLogo {
         width: 0px 100%
-    } */
+    }
+}
