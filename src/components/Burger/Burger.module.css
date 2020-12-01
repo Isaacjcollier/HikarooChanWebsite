@@ -1,0 +1,70 @@
+.dropdownContainer {
+    position: absolute;
+    top: 2.3em;
+    left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+}  
+
+.someClass:focus {
+    outline: none;
+}
+
+.dropdownItemOpen {
+    width: 2rem;
+    height: 0.25rem;
+    background: black;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+}
+
+.dropdownItemClosed {
+    width: 2rem;
+    height: 0.25rem;
+    background: black;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: absolute;
+}
+
+.dropdownFirstItemOpen {
+    transform: rotate(45deg);
+}
+
+.dropdownFirstItemClose {
+    transform: rotate(0)
+}
+
+.dropdownSecondItemOpen {
+    opacity: 0;
+    transform: translate(30px);
+}
+
+.dropdownSecondItemClose {
+    opacity: 1;
+    transform: translate(0);
+}
+
+
+.dropdownThirdItemOpen {
+    transform: rotate(-45deg);
+}
+
+.dropdownThirdItemClose {
+    transform: rotate(0);
+}
+
+@media only screen and (min-width: 801px) {
+    .dropdownContainer {
+        display: none;
+    }
+}

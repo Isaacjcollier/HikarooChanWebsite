@@ -7,7 +7,7 @@ const Header = () => (
 <div className={styles.content}>
     <Link to={"/"} className={styles.headerButton}>Home</Link>
     <Link to={"/AboutMe"} className={styles.headerButton}>About Me</Link>
-    <Link to={"/"}> <img className={styles.hikarooLogo} src={hikarooChanLogo} alt="DadTier Logo"/> </Link>
+    <Link to={"/"}> <img className={styles.hikarooLogo} src={hikarooChanLogo} alt="Hikaroo Logo"/> </Link>
     <Link to={"/Commissions"} className={styles.headerButton}>Commissions</Link>
     <Link to={"/ContactMe"} className={styles.headerButton}>Contact Me</Link>
 
