@@ -20,7 +20,7 @@ function App() {
   const node = useRef(); 
   useOnClickOutside(node, () => setOpen(false));
 
-  const closeMenu = (s) => {
+  const closeMenu = () => {
     setOpen(false)
   }
 
@@ -31,12 +31,14 @@ function App() {
         <Burger open={open} setOpen={setOpen}></Burger>
         <Menu closeMenu={() => closeMenu} open={open} setOpen={setOpen}></Menu>
       </div>
+      <div className={"content"}>
       <Switch>
-        <Route path="/AboutMe"> <AboutMePage/> </Route>
-        <Route path="/Commissions"> <CommissionPage/> </Route>
-        <Route path="/ContactMe"> <ContactMePage/> </Route>
-        <Route path="/"> <HomePage/> </Route>
+          <Route path="/AboutMe" render={() => (<AboutMePage/>)} />
+          <Route path="/Commissions" render={() => (<CommissionPage/>)} />
+          <Route path="/ContactMe" render={() => (<ContactMePage/>)} />
+          <Route path="/" render={() => (<HomePage/>)} />
       </Switch>
+      </div>
     </Router>
   );
 }

@@ -4,8 +4,6 @@ import styles from './Menu.module.css';
 // import hikarooChanLogo from '../../images/Logo-Color.png';
 
 const Menu = ({open, closeMenu}) => {
-console.log(open)
-
 return (
     <div className={styles.navigationContainer + ' ' + (open ? styles.navigationClosed : styles.navigationOpen)} >
         <Link onClick={closeMenu()} to={"/"} className={styles.navigationItem}>Home</Link>
