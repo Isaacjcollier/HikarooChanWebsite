@@ -1,0 +1,100 @@
+.about-me-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-me-header {
+    font-family: "Satisfy", sans-serif;
+}
+
+.about-me-header2 {
+    font-family: "Satisfy", sans-serif;
+}
+
+.about-me-text-container {
+    margin: 0% 5%;
+}
+
+.about-me-text {
+    color: black;
+    font-family: "Poppins", sans-serif;
+}
+
+.about-me-headline {
+    margin: 2rem 0 1rem 0;
+}
+
+
+
+
+/* phone (portrait and landscape) ----------- */
+@media only screen 
+and (min-width : 100px)
+and (max-width : 759px) {
+    .cooking-mamaroo-img {
+        width: 60%;
+    }
+
+    .about-me-text {
+        font-size: 20px;
+    }
+
+    .about-me-header {
+        font-size: 50px;
+        color: black;
+        font-weight: 600;
+    }
+
+    .about-me-header2 {
+        font-size: 50px;
+        font-weight: 600;
+    }
+}
+
+/* Tablet (portrait and landscape) ----------- */
+@media only screen 
+and (min-width : 760px)
+and (max-width: 1300px)  {
+    .cooking-mamaroo-img {
+        width: 30%;
+    }
+
+    .about-me-text {
+        font-size: 26px;
+    }
+
+    .about-me-header {
+        font-size: 76px;
+        color: black;
+        font-weight: 600;
+    }
+
+    .about-me-header2 {
+        font-size: 76px;
+        font-weight: 600;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1300px) {
+    .cooking-mamaroo-img {
+        width: 20%;
+    }
+
+    .about-me-text {
+        font-size: 26px;
+    }
+
+    .about-me-header {
+        font-size: 76px;
+        color: black;
+        font-weight: 600;
+    }
+
+    .about-me-header2 {
+        font-size: 76px;
+        font-weight: 600;
+    }
+}
