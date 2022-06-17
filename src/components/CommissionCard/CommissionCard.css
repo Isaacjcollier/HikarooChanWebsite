@@ -1,0 +1,88 @@
+.commission-card {
+    width: 80%;
+    padding: .5rem 0;
+    margin: .5rem 3rem;
+    border: 1px solid #000;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.commission-card-image {
+    width: 60%;
+}
+
+.commission-card-description-title {
+    font-family: "Satisfy", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0.5rem 0;
+}
+
+.commission-card-description-text {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.commission-card-cost {
+    font-family: "Poppins", sans-serif;
+    color: green;
+}
+
+
+@media only screen 
+and (min-width : 100px)
+and (max-width : 759px) {
+    .commission-card {
+        width: 80%;
+        padding: .5rem 0;
+        margin: .5rem 2rem;
+    }
+
+    .commission-card-description-text {
+        font-size: 20px;
+    }
+    
+    .commission-card-cost {
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+
+/* Tablet (portrait and landscape) ----------- */
+@media only screen 
+and (min-width : 760px)
+and (max-width: 1300px)  {
+    .commission-card {
+        width: 35%;
+        margin: 1.5rem 3rem;
+    }
+
+    .commission-card-description-text {
+        font-size: 22px;
+    }
+    
+    .commission-card-cost {
+        font-size: 26px;
+        font-weight: 600;
+    }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1300px) {
+    .commission-card {
+        width: 25%;
+        margin: 1.5rem 3rem;
+    }
+
+    .commission-card-description-text {
+        font-size: 22px;
+    }
+    
+    .commission-card-cost {
+        font-size: 26px;
+        font-weight: 600;
+    }
+}
